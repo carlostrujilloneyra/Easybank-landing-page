@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/carlostrujilloneyra/Easybank-landing-page/issues"
   },
-  "homepage": "https://github.com/carlostrujilloneyra/Easybank-landing-page#readme",
-  "devDependencies": {
-    "sass": "^1.48.0"
-  }
+  "homepage": "https://github.com/carlostrujilloneyra/Easybank-landing-page#readme"
 }
