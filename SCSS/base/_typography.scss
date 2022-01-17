@@ -1,0 +1,26 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+// Estilos para los títulos, subtítulos, textos
+
+h1, h2, h3{
+    font-family: var(--fontTitles);
+    font-weight: 400;
+    font-size: 4rem;
+    color: var(--colorTitles);
+}
+
+h1{
+    font-size: 5.6rem;
+}
+
+p, a {
+    font-family: var(--fontText);
+    font-size: 4rem;
+    color: var(--colorText);
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+}
