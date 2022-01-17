@@ -1,3 +1,23 @@
+/* Fuentes para el proyecto */
+/* Variables de Fuentes en CSS */
+:root {
+  --fontTitles: "Public Sans", sans-serif;
+  --fontText: "Public Sans", sans-serif;
+}
 
+/*Colores*/
+/* Variables de colores en CSS */
+:root {
+  --firstColorPrimary: #2D314D;
+  --secondColorPrimary: #9597A5;
+  --colorWhite: #FFFFFF;
+  --colorButtons: linear-radient(90deg, rgba(51,211,94,1) 0%, rgba(42,182,217,1) 100%);
+  --colorText: #9597A5;
+  --colorTitles: #2D314D;
+  --colorFooter: #2D314D;
+}
+
+/* Mixin para before */
+/* Mixin para after */
 
 /*# sourceMappingURL=styles.css.map */
