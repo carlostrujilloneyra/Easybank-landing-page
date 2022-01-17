@@ -1,0 +1,22 @@
+{
+  "name": "easybank-landing-page",
+  "version": "1.0.0",
+  "description": "Segundo proyecto que se realiza, con el fin de poner en práctica las habilidades del lado Frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlostrujilloneyra/Easybank-landing-page.git"
+  },
+  "author": "Carlos Trujillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlostrujilloneyra/Easybank-landing-page/issues"
+  },
+  "homepage": "https://github.com/carlostrujilloneyra/Easybank-landing-page#readme",
+  "devDependencies": {
+    "sass": "^1.48.0"
+  }
+}
