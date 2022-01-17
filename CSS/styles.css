@@ -19,5 +19,40 @@
 
 /* Mixin para before */
 /* Mixin para after */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: var(--fontTitles);
+  font-weight: 400;
+  font-size: 4rem;
+  color: var(--colorTitles);
+}
+
+h1 {
+  font-size: 5.6rem;
+}
+
+p, a {
+  font-family: var(--fontText);
+  font-size: 4rem;
+  color: var(--colorText);
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+}
 
 /*# sourceMappingURL=styles.css.map */
