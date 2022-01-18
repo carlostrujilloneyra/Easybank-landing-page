@@ -46,13 +46,12 @@ h1 {
 
 p, a {
   font-family: var(--fontText);
-  font-size: 4rem;
+  font-size: 1.6rem;
   color: var(--colorText);
 }
 
 a {
   text-decoration: none;
-  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */
