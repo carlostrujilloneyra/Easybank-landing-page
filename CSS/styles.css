@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Fuentes para el proyecto */
 /* Variables de Fuentes en CSS */
 :root {
@@ -11,7 +12,8 @@
   --firstColorPrimary: #2D314D;
   --secondColorPrimary: #9597A5;
   --colorWhite: #FFFFFF;
-  --colorButtons: linear-radient(90deg, rgba(51,211,94,1) 0%, rgba(42,182,217,1) 100%);
+  --colorGreen: #30C88F;
+  --colorButtons: linear-gradient(90deg, rgba(51,211,94,1) 0%, rgba(42,182,217,1) 100%);
   --colorText: #9597A5;
   --colorTitles: #2D314D;
   --colorFooter: #2D314D;
@@ -19,6 +21,22 @@
 
 /* Mixin para before */
 /* Mixin para after */
+@media screen and (min-width: 1600px) {
+  .main-header {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .main-header {
+    max-width: 65%;
+  }
+}
+@media screen and (min-width: 2300px) {
+  .main-header {
+    max-width: 50%;
+  }
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -30,6 +48,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 100vh;
 }
 
@@ -52,6 +73,183 @@ p, a {
 
 a {
   text-decoration: none;
+}
+
+.main-header {
+  display: flex;
+  width: 100%;
+  height: 8rem;
+  padding: 0rem 2.4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 740px) {
+  .main-header {
+    padding: 0 6.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-header {
+    padding: 0 10rem;
+    align-items: center;
+  }
+}
+.main-header__logo {
+  display: block;
+  width: 15rem;
+  height: 3rem;
+  margin-right: 2.4rem;
+}
+
+/* Contenedor del logo y barra de navegación del header */
+.main-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.2rem 0;
+}
+@media screen and (min-width: 700px) {
+  .main-header__container {
+    width: 76%;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .main-header__container {
+    width: 70%;
+  }
+}
+
+.home {
+  width: 15rem;
+  height: 3rem;
+}
+
+.container-main-hamburguer {
+  width: 2.4rem;
+  height: 1.5rem;
+  background: linear-gradient(#2D314D 20%, transparent 20%, transparent 40%, #2D314D 40%, #2D314D 60%, transparent 60%, transparent 80%, #2D314D 80%);
+}
+@media screen and (min-width: 700px) {
+  .container-main-hamburguer {
+    display: none;
+  }
+}
+
+.main-header__nav {
+  padding: 1.2rem 0;
+  background-color: springgreen;
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .main-header__nav {
+    display: block;
+  }
+}
+
+/* Lista del Header */
+.main-header__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.main-header__list:hover .main-header__list-link {
+  filter: blur(0.5rem);
+  opacity: 0.4;
+  transition: all 0.4s;
+}
+.main-header__list .main-header__list-link:hover {
+  filter: blur(0);
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.main-list__link {
+  height: 100%;
+}
+@media screen and (min-width: 700px) {
+  .main-list__link {
+    margin: 0 0.8rem;
+  }
+}
+@media screen and (min-width: 930px) {
+  .main-list__link {
+    margin: 0 1.2rem;
+  }
+}
+/* Estilos para los enlaces */
+.main-header__list-link {
+  position: relative;
+  font-size: 1.4rem;
+}
+.main-header__list-link:hover {
+  color: var(--firstColorPrimary);
+  transition: all 0.4s;
+}
+.main-header__list-link:hover::before {
+  width: 100%;
+  transition: all 0.4s;
+}
+.main-header__list-link::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-bottom: 0.4rem solid var(--colorGreen);
+  transition: all 0.4s;
+}
+@media screen and (min-width: 800px) {
+  .main-header__list-link {
+    padding: 0.2rem;
+  }
+}
+@media screen and (min-width: 860px) {
+  .main-header__list-link {
+    padding: 0.8rem;
+  }
+}
+
+.main-button {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--colorWhite);
+}
+.main-button--header {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .main-button--header {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 700px) {
+  .main-button {
+    color: var(--colorWhite);
+    padding: 1rem 1.8rem;
+  }
+}
+.main-button:hover::before {
+  opacity: 0.7;
+}
+.main-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--colorButtons);
+  border-radius: 1.6rem;
+  z-index: -10;
+  transition: all 0.5s;
+}
+@media screen and (min-width: 1024px) {
+  .main-button {
+    padding: 1.6rem 3.2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
