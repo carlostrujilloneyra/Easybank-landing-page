@@ -1,0 +1,54 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-list__link{
+    height: 100%;
+
+    @include responsive(700px){
+        margin: 0 .8rem;
+    }
+    
+    @include responsive(930px){
+        margin: 0 1.2rem;
+    }
+    
+    @include responsive(desktop){
+        // padding: .8rem 1.2rem;
+    }
+
+    @include responsive(1200px){
+        // padding: .8rem 1.6rem;
+    }
+}
+
+/* Estilos para los enlaces */
+
+.main-header__list-link{
+    position: relative;
+    font-size: 1.4rem;
+
+    &:hover{
+        color: var(--firstColorPrimary);
+        transition: all .4s;
+    }
+
+    &:hover::before{
+        width: 100%;
+        transition: all .4s;
+    }
+
+    &::before{
+        @include before(1rem, 0, 0, 100%){
+            border-bottom: .4rem solid var(--colorGreen);
+            transition: all .4s;
+        }
+    }
+
+    @include responsive(800px){
+        padding: .2rem;
+    }
+
+    @include responsive(860px){
+        padding: .8rem;
+    }
+}

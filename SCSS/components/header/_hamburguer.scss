@@ -1,0 +1,12 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.container-main-hamburguer{
+    width: 2.4rem;
+    height: 1.5rem;
+    background: linear-gradient(#2D314D 20%,transparent 20%,transparent 40%,#2D314D 40%,#2D314D 60%, transparent 60%,transparent 80%,#2D314D 80%);
+
+    @include responsive(700px){
+        display: none;
+    }
+}

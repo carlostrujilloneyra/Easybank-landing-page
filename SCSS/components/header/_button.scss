@@ -1,0 +1,40 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-button{
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--colorWhite);
+
+    &--header{
+        display: none;
+        
+        @include responsive(700px){
+            display: inline-block;
+        }
+    }
+
+    @include responsive(700px){
+        color: var(--colorWhite);
+        padding: 1rem 1.8rem;
+    }
+
+    &:hover::before{
+        opacity: .7;
+    }
+    
+    &::before{
+        @include before(0, 0, 100%, 100%){
+            background: var(--colorButtons);
+            border-radius: 1.6rem;
+            z-index: -10;
+            transition: all .5s;
+        }
+    }
+    
+    @include responsive(desktop){
+        padding: 1.6rem 3.2rem;
+    }
+    
+}

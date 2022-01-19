@@ -1,0 +1,34 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+
+.main-header__nav{
+    padding: 1.2rem 0;
+    background-color: springgreen;
+    display: none;
+
+    @include responsive(700px){
+        display: block;
+    }
+}
+
+
+/* Lista del Header */
+
+.main-header__list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    &:hover .main-header__list-link{
+        filter: blur(.5rem);
+        opacity: .4;
+        transition: all .4s;
+    }
+
+    & .main-header__list-link:hover{
+        filter: blur(0);
+        opacity: 1;
+        transition: all .4s;
+    }
+}
