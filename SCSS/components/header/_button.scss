@@ -2,9 +2,11 @@
 @use '../../abstracts/mixins' as *;
 
 .main-button{
+    display: inline-block;
     position: relative;
     font-size: 1.4rem;
     font-weight: 700;
+    border-radius: 1.6rem;
     color: var(--colorWhite);
 
     &--header{
@@ -34,7 +36,7 @@
     }
     
     @include responsive(desktop){
-        padding: 1.6rem 3.2rem;
+        padding: 1.6rem 4rem;
     }
     
 }

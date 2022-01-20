@@ -1,2 +1,8 @@
 @use '../../abstracts/variables' as *;
 @use '../../abstracts/mixins' as *;
+
+.main-hero__title{
+    @include responsive(desktop){
+        margin-bottom: 3.2rem;
+    }
+}
