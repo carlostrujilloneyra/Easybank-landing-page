@@ -7,8 +7,8 @@
     padding: 1.2rem 2.4rem;
 
     @include responsive(700px){
-        padding: .4rem;
         margin: 0 .8rem;
+        padding: .4rem;
     }
     
     @include responsive(930px){
@@ -26,10 +26,6 @@
     @include responsive(700px){
         color: var(--colorText);
         font-size: 1.4rem;
-    }
-
-    @include responsive(860px){
-        padding: 0;
     }
 
     @include responsive(desktop){

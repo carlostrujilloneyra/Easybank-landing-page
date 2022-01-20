@@ -23,11 +23,13 @@
     @include responsive(tablet){
         grid-template-rows: minmax(66rem, 34rem) 29rem;
         padding: 0rem 4.8rem;
+        row-gap: 4rem;
     }
 
     @include responsive(desktop){
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1, minmax(65rem, 68rem));
+        grid-template-rows: repeat(1, minmax(66rem, 68rem));
+        row-gap: 0;
         column-gap: 3rem;
         padding: 0rem 10rem;
     }
@@ -46,8 +48,6 @@
 
     @include responsive(desktop){
         text-align: start;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: flex-start;
     }
@@ -70,7 +70,6 @@
     }
 
     @include responsive(tablet){
-        width: 80%;
         height: 66rem;
     }
 
@@ -96,7 +95,6 @@
         }
 
         @include responsive(tablet){
-            width: 100%;
             height: 120%;
             transform: translateY(-10rem);
         }
@@ -104,8 +102,10 @@
         @include responsive(desktop){
             transform: translateX(11rem) translateY(-14rem);
         }
-        
 
+        @include responsive(1300px){
+            transform: translateX(8rem) translateY(-14rem);
+        }
     }
 }
 

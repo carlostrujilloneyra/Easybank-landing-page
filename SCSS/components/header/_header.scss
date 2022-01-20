@@ -39,14 +39,12 @@
         width: 75%;
     }
 
-    @include responsive(1120px){
-        width: 75%;
-    }
-
     @include responsive(1300px){
         width: 70%;
     }
 }
+
+// Enlace que engloba al Logo de Easybank
 
 .home{
     width: 15rem;
