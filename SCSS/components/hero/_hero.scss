@@ -4,32 +4,109 @@
 // Contenedor de Hero
 
 .main-hero{
+    position: relative;
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(2,minmax(27rem, 1fr));
+    grid-template-rows: minmax(30rem, 34rem) 30rem;
+    row-gap: 2.4rem;
     padding: 0rem 2.4rem;
-    border: .1rem solid turquoise;
-    // align-items: center; (Opcional)
+    background-color: rgb(250, 249 , 250);
+    
+    &__image{
+        justify-self: center;
+    }
+
+    @include responsive(700px){
+        grid-template-rows: minmax(60rem, 34rem) 29rem;
+    }
 
     @include responsive(tablet){
+        grid-template-rows: minmax(66rem, 34rem) 29rem;
         padding: 0rem 4.8rem;
     }
 
     @include responsive(desktop){
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(1, minmax(66rem, 1fr));
-        column-gap: 2.4rem;
+        grid-template-rows: repeat(1, minmax(65rem, 68rem));
+        column-gap: 3rem;
         padding: 0rem 10rem;
     }
 }
 
-
 // Primer contenedor (main-hero__info)
 
+.main-hero__info{
+    text-align: center;
 
+    @include responsive(tablet){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include responsive(desktop){
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
 
 // Segundo contenedor (main-hero__image)
 
 .main-hero__image{
-    
+    width: 100%;
+    height: 34rem;
+    order: -1;
+    overflow: hidden;
+
+    @include responsive(580px){
+        width: 80%;
+    }
+
+    @include responsive(700px){
+        height: 60rem;
+    }
+
+    @include responsive(tablet){
+        width: 80%;
+        height: 66rem;
+    }
+
+    @include responsive(desktop){
+        position: absolute;
+        width: 60rem;
+        height: 90rem;
+        top: 0;
+        right: 0;
+    }
+
+    @include responsive(1120px){
+        width: 70rem;
+    }
+
+    & img{
+        width: 100%;
+        height: 130%;
+        transform: translateY(-12rem);
+
+        @include responsive(700px){
+            transform: translateY(-15rem);
+        }
+
+        @include responsive(tablet){
+            width: 100%;
+            height: 120%;
+            transform: translateY(-10rem);
+        }
+
+        @include responsive(desktop){
+            transform: translateX(11rem) translateY(-14rem);
+        }
+        
+
+    }
 }
+
+

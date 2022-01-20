@@ -8,6 +8,8 @@
     font-weight: 700;
     border-radius: 1.6rem;
     color: var(--colorWhite);
+    padding: 1.6rem 4rem;
+    background: var(--colorButtons);
 
     &--header{
         display: none;
@@ -19,7 +21,7 @@
 
     @include responsive(700px){
         color: var(--colorWhite);
-        padding: 1rem 1.8rem;
+        padding: 1.2rem 2rem;
     }
 
     &:hover::before{
@@ -36,6 +38,7 @@
     }
     
     @include responsive(desktop){
+        max-width: 17.506rem;
         padding: 1.6rem 4rem;
     }
     
