@@ -10,6 +10,7 @@
     grid-template-rows: minmax(30rem, 34rem) 30rem;
     row-gap: 2.4rem;
     padding: 0rem 2.4rem;
+    padding-bottom: 3.2rem;
     background-color: rgb(250, 249 , 250);
     
     &__image{
@@ -18,12 +19,17 @@
 
     @include responsive(700px){
         grid-template-rows: minmax(60rem, 34rem) 29rem;
+        padding-bottom: 1.2rem;
     }
 
     @include responsive(tablet){
         grid-template-rows: minmax(66rem, 34rem) 29rem;
         padding: 0rem 4.8rem;
         row-gap: 4rem;
+    }
+
+    @include responsive(900px){
+        grid-template-rows: minmax(66rem, 34rem) 26rem;
     }
 
     @include responsive(desktop){

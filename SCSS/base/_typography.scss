@@ -16,8 +16,12 @@ h1{
 
 p, a {
     font-family: var(--fontText);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: var(--colorText);
+}
+
+p{
+    line-height: 1.56;
 }
 
 a{

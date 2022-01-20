@@ -9,7 +9,7 @@
     border-radius: 1.6rem;
     color: var(--colorWhite);
     padding: 1.6rem 4rem;
-    background: var(--colorButtons);
+    z-index: 100;
 
     &--header{
         display: none;
