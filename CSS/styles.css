@@ -22,17 +22,17 @@
 /* Mixin para before */
 /* Mixin para after */
 @media screen and (min-width: 1600px) {
-  .main-header {
+  .main-header, .main-hero {
     max-width: 80%;
   }
 }
 @media screen and (min-width: 1900px) {
-  .main-header {
+  .main-header, .main-hero {
     max-width: 65%;
   }
 }
 @media screen and (min-width: 2300px) {
-  .main-header {
+  .main-header, .main-hero {
     max-width: 50%;
   }
 }
@@ -258,9 +258,11 @@ a {
 }
 
 .main-button {
+  display: inline-block;
   position: relative;
   font-size: 1.4rem;
   font-weight: 700;
+  border-radius: 1.6rem;
   color: var(--colorWhite);
 }
 .main-button--header {
@@ -294,7 +296,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .main-button {
-    padding: 1.6rem 3.2rem;
+    padding: 1.6rem 4rem;
   }
 }
 
@@ -303,6 +305,7 @@ a {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(2, minmax(27rem, 1fr));
   padding: 0rem 2.4rem;
+  border: 0.1rem solid turquoise;
 }
 @media screen and (min-width: 740px) {
   .main-hero {
@@ -312,9 +315,38 @@ a {
 @media screen and (min-width: 1024px) {
   .main-hero {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, minmax(66rem, 1fr));
+    grid-template-rows: repeat(1, minmax(66rem, 1fr));
     column-gap: 2.4rem;
     padding: 0rem 10rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-hero__title {
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-hero__text {
+    line-height: 1.56;
+    margin-bottom: 4.8rem;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .main-hero__text {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .main-hero__text {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-button--hero {
+    margin-top: 0.4rem;
   }
 }
 
