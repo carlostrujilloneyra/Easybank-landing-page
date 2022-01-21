@@ -12,8 +12,8 @@
 
 ## Acerca del Proyecto
 
-- Easybank-landing-page es una landing page, que busca dar a conocer información sobre esta empresa para el diferente tipo de público objetivo que esta 
-tiene . El sitio está adaptado para verse correctamente en dispositivos móviles, tablets y desktops, ya que cuenta 
+- Easybank-landing-page es una landing page, que busca dar a conocer información sobre un banco para el diferente tipo de público objetivo que este 
+posee . La página Web está adaptada para verse correctamente en dispositivos móviles, tablets y desktops, ya que cuenta 
 con "Responsive Web Design". El diseño fue tomado de [Frontend Mentor](https://www.frontendmentor.io/challenges), donde se empezó desde cero, 
 usando las tecnologías mencionadas en la parte de abajo. Esta página está animada cuando realizas scroll, para una mejor experiencia 
 de usuario. Espero que sea de tu agrado el proyecto! 
