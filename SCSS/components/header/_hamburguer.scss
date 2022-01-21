@@ -3,8 +3,21 @@
 
 .container-main-hamburguer{
     width: 2.4rem;
-    height: 1.5rem;
+    height: 1.8rem;
     background: linear-gradient(#2D314D 20%,transparent 20%,transparent 40%,#2D314D 40%,#2D314D 60%, transparent 60%,transparent 80%,#2D314D 80%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all .5s;
+
+    &--new{
+        transform: scale(1.8);
+        background-image: url('../images/icon-close.svg');
+        background-size: cover;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
 
     @include responsive(700px){
         display: none;

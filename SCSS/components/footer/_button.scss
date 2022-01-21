@@ -5,8 +5,7 @@
     margin: 3.2rem 0;
 
     @include responsive(desktop){
-        margin: 0;
-        margin-bottom: 2.4rem;
+        margin: 0 0 2.4rem 0;
     }
 }
 

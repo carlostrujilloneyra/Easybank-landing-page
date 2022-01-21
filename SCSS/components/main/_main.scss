@@ -9,10 +9,6 @@
     padding-top: 6.4rem;
     background-color: rgb(242, 243, 246);
 
-    @include responsive(tablet){
-        
-    }
-
     @include responsive(desktop){
         padding: 0rem 10rem;
         padding-top: 12rem;
@@ -58,8 +54,8 @@
 
             @include responsive(tablet){
                 width: 80%;
-                font-size: 1.6rem;
                 margin-bottom: 1.6rem;
+                font-size: 1.6rem;
             }
 
             @include responsive(desktop){

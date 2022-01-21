@@ -1,5 +1,6 @@
-@use '../abstracts/variables';
-@use '../abstracts/mixins';
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 
 *, *::before, *::after{
     margin: 0;
@@ -16,4 +17,9 @@ body{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    padding-top: 8rem;
+
+    @include responsive(tablet){
+        padding-top: 0;
+    }
 }

@@ -3,18 +3,13 @@
 
 
 .main-header__nav{
-    display: none;
+    width: 100%;
     padding: 4.8rem 0;
     background-color: var(--colorWhite);
-    position: absolute;
-    top: 8rem;
-    right: 0;
-    width: 75vw;
     height: calc(100vh - 8rem);
     
     @include responsive(700px){
-        position: relative;
-        top: 0;
+        position: static;
         display: flex;
         align-items: center;
         width: auto;
@@ -35,7 +30,7 @@
     padding: 1.6rem 1.2rem;
 
     @include responsive(700px){
-        padding: 0 0;
+        padding: 0;
         flex-direction: row;
     }
 
