@@ -7,15 +7,16 @@
     height: 2.4rem;
     margin-right: 1.6rem;
 
-    &:hover img{
-        filter: invert(55%) sepia(96%) saturate(343%) hue-rotate(106deg) brightness(101%) contrast(80%);
-        transition: all .6s;
-    }
-
     & img{
         width: 2.4rem;
         height: 2.4rem;
         transition: all .6s;
+    }
 
+    @include responsive(desktop){
+        &:hover img{
+            filter: invert(55%) sepia(96%) saturate(343%) hue-rotate(106deg) brightness(101%) contrast(80%);
+            transition: all .6s;
+        }
     }
 }
