@@ -1,8 +1,8 @@
 # Easybank-landing-page
 
-
-
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/50873002/150611360-4ba4decf-ecbb-4d8f-9eb1-46758055c437.gif" width="100%">
+</p>
 
 
 ---
@@ -20,7 +20,7 @@ de usuario. Espero que sea de tu agrado el proyecto!
 
 
  ## Objetivos del Proyecto
-- Construir un sitio Web utilizando las tecnologías del lado Frontend. 
+- Construir una Landing Page de un banco utilizando las tecnologías del lado Frontend. 
 - Afirmar y poner en práctica las habilidades y conceptos adquiridos de manera autodidacta. 
 - Aprender mejores prácticas.
 
