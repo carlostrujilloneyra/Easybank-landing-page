@@ -870,14 +870,16 @@ a {
   height: 2.4rem;
   margin-right: 1.6rem;
 }
-.social-network:hover img {
-  filter: invert(55%) sepia(96%) saturate(343%) hue-rotate(106deg) brightness(101%) contrast(80%);
-  transition: all 0.6s;
-}
 .social-network img {
   width: 2.4rem;
   height: 2.4rem;
   transition: all 0.6s;
+}
+@media screen and (min-width: 1024px) {
+  .social-network:hover img {
+    filter: invert(55%) sepia(96%) saturate(343%) hue-rotate(106deg) brightness(101%) contrast(80%);
+    transition: all 0.6s;
+  }
 }
 
 .main-footer__list {
@@ -901,9 +903,11 @@ a {
   color: var(--colorWhite);
   font-size: 1.5rem;
 }
-.main-footer__enlace:hover {
-  color: var(--colorGreen);
-  transition: all 0.5s;
+@media screen and (min-width: 1024px) {
+  .main-footer__enlace:hover {
+    color: var(--colorGreen);
+    transition: all 0.5s;
+  }
 }
 
 .main-button--footer {
