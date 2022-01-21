@@ -1,0 +1,69 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-article__card{
+    box-shadow: .1rem .1rem .4rem rgba(0, 0, 0, .1);
+    border-radius: .4rem;
+    background-color: var(--colorWhite);
+
+    &-image{
+        display: block;
+        width: 100%;
+        height: 20rem;
+        border-top-left-radius: .4rem;
+        border-top-right-radius: .4rem;
+
+        @include responsive(tablet){
+            height: 28rem;
+        }
+
+        @include responsive(desktop){
+            height: 20rem;
+        }
+    }
+
+}
+
+// Autor del card
+
+.card__author{
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-left: 2.4rem;
+    margin-bottom: 1rem;
+    margin: 2.5rem 2.4rem 1rem 2.4rem ;
+}
+
+// Título del card
+
+.card__title{
+    width: 80%;
+    margin-left: 2.4rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+
+    @include responsive(desktop){
+        &:hover{
+            cursor: pointer;
+            color: var(--colorGreen);
+            transition: all .5s;
+        }
+    }
+}
+
+// Parráfo del card
+
+.card__paragraph{
+    width: 80%;
+    margin-left: 2.4rem;
+    margin-bottom: 2.4rem;
+    font-size: 1.4rem;
+
+    @include responsive(tablet){
+        margin-bottom: 4rem;
+    }
+
+    @include responsive(desktop){
+        margin-bottom: 2.4rem;
+    }
+}

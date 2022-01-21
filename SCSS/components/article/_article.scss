@@ -1,0 +1,59 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+// Contenedor article
+.main-article{
+    width: 100%;
+    padding: 0 2.4rem;
+    background-color: rgb(249, 249, 249);
+    
+    @include responsive(tablet){
+        padding: 0 4.8rem;
+    }
+    
+    @include responsive(desktop){
+        padding: 0 10rem;
+        padding-top: 8rem;
+    }
+
+    // Contenedor de los cards
+
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,minmax(40rem, 1fr));
+        row-gap: 3.2rem;
+        margin-bottom: 8rem;
+
+        @include responsive(500px){
+            justify-content: center;
+            grid-template-columns: repeat(1,minmax(34rem, 40rem));
+        }
+
+        @include responsive(tablet){
+            justify-content: flex-start;
+            grid-template-columns: repeat(2, minmax(30rem,1fr));
+            grid-template-rows: repeat(2,minmax(45rem,49rem));
+            column-gap: 2.4rem;
+            row-gap: 4rem;
+        }
+
+        @include responsive(860px){
+            grid-template-rows: repeat(2,minmax(45rem,47rem));
+        }
+
+        @include responsive(desktop){
+            grid-template-columns: repeat(auto-fit,minmax(22rem,32rem));
+            column-gap: 3rem;
+        }
+
+        @include responsive(1200px){
+            grid-template-columns: repeat(auto-fit,minmax(22rem,28rem));
+        }
+
+        @include responsive(1345px){
+            grid-template-columns: repeat(auto-fit,minmax(22rem,26rem));
+            grid-template-rows: repeat(1,1fr);
+        }
+    }
+}
