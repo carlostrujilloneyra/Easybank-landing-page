@@ -306,7 +306,7 @@ a {
   position: relative;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: minmax(30rem, 34rem) 30rem;
+  grid-template-rows: repeat(2, minmax(30rem, 34rem));
   row-gap: 2.4rem;
   padding: 0rem 2.4rem;
   padding-bottom: 3.2rem;
@@ -493,10 +493,10 @@ a {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .main-button--hero {
-    margin-top: 0.4rem;
-  }
+.main-button--hero {
+  margin-top: 0.4rem;
+  display: inline-block;
+  margin-bottom: 3.2rem;
 }
 
 .main {
@@ -663,11 +663,13 @@ a {
 .main-article {
   width: 100%;
   padding: 0 2.4rem;
+  padding-top: 8rem;
   background-color: #f9f9f9;
 }
 @media screen and (min-width: 740px) {
   .main-article {
     padding: 0 4.8rem;
+    padding-top: 8rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -724,10 +726,12 @@ a {
 .main__subtitle--article {
   margin-bottom: 3.2rem;
   font-weight: 100;
+  text-align: center;
 }
 @media screen and (min-width: 740px) {
   .main__subtitle--article {
     margin-bottom: 3.6rem;
+    text-align: start;
   }
 }
 @media screen and (min-width: 1024px) {
