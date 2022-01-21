@@ -1,0 +1,16 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-button--footer{
+    margin: 3.2rem 0;
+
+    @include responsive(desktop){
+        margin: 0;
+        margin-bottom: 2.4rem;
+    }
+}
+
+.main-footer__copyright{
+    font-size: 1.5rem;
+    text-align: center;
+}
