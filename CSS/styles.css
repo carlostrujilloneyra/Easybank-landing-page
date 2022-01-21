@@ -36,6 +36,10 @@
   }
 }
 
+.main, .main-article, .main-footer {
+  overflow: hidden;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
