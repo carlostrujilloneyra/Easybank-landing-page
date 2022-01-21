@@ -7,7 +7,7 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: minmax(30rem, 34rem) 30rem;
+    grid-template-rows: repeat(2,minmax(30rem,34rem));
     row-gap: 2.4rem;
     padding: 0rem 2.4rem;
     padding-bottom: 3.2rem;
