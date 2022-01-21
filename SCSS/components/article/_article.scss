@@ -57,5 +57,10 @@
             grid-template-columns: repeat(auto-fit,minmax(22rem,26rem));
             grid-template-rows: repeat(1,1fr);
         }
+
+        @include responsive(3240px){
+            grid-template-columns: repeat(auto-fit,minmax(22rem,33rem));
+            grid-template-rows: repeat(1,1fr);
+        }
     }
 }
