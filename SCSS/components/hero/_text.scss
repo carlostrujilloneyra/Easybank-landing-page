@@ -39,7 +39,7 @@
 // Modificación para el botón de Hero
 
 .main-button--hero{
-    @include responsive(desktop){
-        margin-top: .4rem;
-    }
+    margin-top: .4rem;
+    display: inline-block;
+    margin-bottom: 3.2rem;
 }

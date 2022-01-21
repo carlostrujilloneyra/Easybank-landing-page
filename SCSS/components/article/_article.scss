@@ -5,10 +5,12 @@
 .main-article{
     width: 100%;
     padding: 0 2.4rem;
+    padding-top: 8rem;
     background-color: rgb(249, 249, 249);
     
     @include responsive(tablet){
         padding: 0 4.8rem;
+        padding-top: 8rem;
     }
     
     @include responsive(desktop){
