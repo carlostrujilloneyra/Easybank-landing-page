@@ -5,31 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easybank-landing Page</title>
-    <link rel="shortcut icon" href="images/logo.svg
-    .main-footer__first-part" type="image/png">
+    <link rel="shortcut icon" href="images/logo.svg" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
+    <!-- Animaciones mediante el scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
     <!-- Header -->
     
     <header class="main-header">
-        
-        <div class="main-header__container">
 
-            <!-- Logo -->
-            <a href="index.html" class="home">
-                <img src="images/logo.svg" alt="Logo-Principal" class="main-header__logo">
-            </a>
+        <!-- Logo -->
+        <a href="index.html" class="home">
+            <img src="images/logo.svg" alt="Logo-Principal" class="main-header__logo">
+        </a>
 
-            <!-- Menú Hamburguesa -->
-            <div class="container-main-hamburguer"></div>
-
+        <div class="main-header__content" id="main-header__content">
+            
             <!-- Barra de navegación -->
-            <nav class="main-header__nav">
+            <nav class="main-header__nav" id="main-header__nav">
                 <ul class="main-header__list">
                     <li class="main-list__link"><a href="#" class="main-header__list-link">Home</a></li>
                     <li class="main-list__link"><a href="#" class="main-header__list-link">About</a></li>
@@ -39,6 +37,9 @@
                 </ul>
             </nav>
         </div>
+
+        <!-- Menú Hamburguesa -->
+        <div class="container-main-hamburguer" id="main-hamburguer"></div>
 
         <!-- Botón del Header -->
         <a href="#" class="main-button main-button--header">Request invite</a>
@@ -114,7 +115,7 @@
         <div class="main-article__cards">
 
             <!-- Primer Card -->
-            <div class="main-article__card">
+            <div class="main-article__card main-article__card--first">
                 <img src="images/image-currency.jpg" alt="Currency" class="main-article__card-image">
                 <a href="#" class="card__author">By Claire Robinson</a>
                 <h3 class="card__title">Receive money in any currency with no fees</h3>
@@ -122,7 +123,7 @@
             </div>
 
             <!-- Segundo Card -->
-            <div class="main-article__card">
+            <div class="main-article__card main-article__card--second">
                 <img src="images/image-restaurant.jpg" alt="Restaurant" class="main-article__card-image">
                 <a href="#" class="card__author">By Claire Robinson</a>
                 <h3 class="card__title">Treat yourself without worrying about money</h3>
@@ -130,7 +131,7 @@
             </div>
 
             <!-- Tercer Card -->
-            <div class="main-article__card">
+            <div class="main-article__card main-article__card--third">
                 <img src="images/image-plane.jpg" alt="Plane" class="main-article__card-image">
                 <a href="#" class="card__author">By Claire Robinson</a>
                 <h3 class="card__title">Take your Easybank card wherever you go</h3>
@@ -138,7 +139,7 @@
             </div>
 
             <!-- Cuarto Card -->
-            <div class="main-article__card">
+            <div class="main-article__card main-article__card--four">
                 <img src="images/image-confetti.jpg" alt="Plane" class="main-article__card-image">
                 <a href="#" class="card__author">By Claire Robinson</a>
                 <h3 class="card__title">Take your Easybank card wherever you go</h3>
@@ -211,6 +212,8 @@
         </div>
     </div>
     
+    <!-- Script para las animaciones mediante el scroll -->
+    <script src="JS/animation.js"></script>
     <script src="JS/script.js"></script>
 </body>
 </html>
